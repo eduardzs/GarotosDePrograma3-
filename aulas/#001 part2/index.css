@@ -1,0 +1,23 @@
+#container {
+    width: 200px;
+    height: 200px;
+}
+
+.fundo{
+    background: #242424;
+}
+
+.fundo2{
+    background: #6655ee;
+}
+
+button{
+    padding: 20px;
+    background: #8844ee;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button:hover{
+    background: #6644ee;
+}
