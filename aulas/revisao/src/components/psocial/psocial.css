@@ -1,0 +1,13 @@
+.psocial-main{
+    height: 500px;
+    width: 500px;
+    background-color: #8844ee;
+}
+
+.psocial-img{
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 500px;
+    min-height: 300px;
+    display: block;
+}
