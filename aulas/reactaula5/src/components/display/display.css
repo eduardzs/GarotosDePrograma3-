@@ -1,0 +1,27 @@
+.display-div{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    background: #F1F3F6;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-span{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    text-align: center;
+    font-size: 1.75rem;
+    padding: 5px;
+    overflow: auto;
+    box-sizing: border-box;
+    background: #F1F3F6;
+    border: 2px solid #1565C0;
+    border-radius: 10px;
+}
