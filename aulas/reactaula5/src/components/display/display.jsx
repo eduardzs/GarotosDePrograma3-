@@ -3,8 +3,8 @@ import './display.css'
 
 // import { Container } from './styles';
 
-function display({text}) {
-  return <div className="display-div">
+function display({text, classCss}) {
+  return <div className={"display-div " + classCss}>
     <span className="display-span">{text}</span>
   </div>;
 }

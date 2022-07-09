@@ -2,8 +2,6 @@
     width: 100%;
     height: 100px;
     margin-top: 40px;
-    background: #F1F3F6;
-    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -17,11 +15,18 @@
     width: 90%;
     height: 70%;
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 3rem;
     padding: 5px;
     overflow: auto;
     box-sizing: border-box;
-    background: #F1F3F6;
     border: 2px solid #1565C0;
     border-radius: 10px;
+    font-family: "DS-DIGI";
 }
+
+.DisplayTema-Dark{
+    background: #141518;
+    color: #fff;
+    box-shadow: 5px 5px 10px #000000, -5px -5px 10px rgba(20, 21, 24, 0.4);
+}
+

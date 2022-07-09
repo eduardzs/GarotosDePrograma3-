@@ -1,7 +1,6 @@
 .botao-div{
     width: 100%;
     height: 100%;
-    background: #F1F3F6;
     box-shadow: -2px -2px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
     border-radius: 15px;
     display: flex;
@@ -19,4 +18,16 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.BotaoTema-Dark{
+    background: #141518;
+    color: #fff;
+    box-shadow: 5px 5px 10px #000000, -5px -5px 10px rgba(20, 21, 24, 0.4);
+}
+
+.BotaoTema-Dark button{
+    background: #141518;
+    color: #fff;
+    box-shadow: 5px 5px 10px #000000, -5px -5px 10px rgba(20, 21, 24, 0.4);
 }

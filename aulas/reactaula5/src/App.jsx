@@ -3,9 +3,15 @@ import "./App.css";
 import Display from "./components/display/display";
 import Botao from "./components/botao/botao";
 import * as math from "mathjs";
+import TemaLight from "./assets/img/Mode_Light.svg";
+import TemaDark from "./assets/img/Mode_Dark.svg";
 
 function App() {
   const [display, setDisplay] = useState("");
+  const [TemaAtual, setTemaAtual] = useState(false);
+  function MudarTema(){
+    setTemaAtual(!TemaAtual)
+  }
   function insereDisplay(params) {
     setDisplay(display + params);
   }
@@ -19,10 +25,14 @@ function App() {
   
   return (
   <div className='App'>
-    <div className="App-div">
-      <Display text={display} />
+    <div className={"App-div " + (TemaAtual?"Tema-Dark":"Tema-Light")}>
+      <div className="BotaoTema-div">
+        <img onClick={MudarTema} src={TemaAtual?TemaDark:TemaLight} alt="Botão Tema"/>
+      </div>
+      <Display text={display} classCss = {TemaAtual?"DisplayTema-Dark":"Tema-Light"}/>
       <div className="Teclado">
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"1"}
           gridPosicaoColumn={"1"}
@@ -30,6 +40,7 @@ function App() {
           onclick={() => insereDisplay("1")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"2"}
           gridPosicaoColumn={"2"}
@@ -37,6 +48,7 @@ function App() {
           onclick={() => insereDisplay("2")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"3"}
           gridPosicaoColumn={"3"}
@@ -44,6 +56,7 @@ function App() {
           onclick={() => insereDisplay("3")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"4"}
           gridPosicaoColumn={"1"}
@@ -51,6 +64,7 @@ function App() {
           onclick={() => insereDisplay("4")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"5"}
           gridPosicaoColumn={"2"}
@@ -58,6 +72,7 @@ function App() {
           onclick={() => insereDisplay("5")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"6"}
           gridPosicaoColumn={"3"}
@@ -65,6 +80,7 @@ function App() {
           onclick={() => insereDisplay("6")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           gridPosicaoColumn={"1"}
           gridPosicaoRow={"2"}
           tipo={"number"}
@@ -72,6 +88,7 @@ function App() {
           onclick={() => insereDisplay("7")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"8"}
           gridPosicaoColumn={"2"}
@@ -79,6 +96,7 @@ function App() {
           onclick={() => insereDisplay("8")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"9"}
           gridPosicaoColumn={"3"}
@@ -86,6 +104,7 @@ function App() {
           onclick={() => insereDisplay("9")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"0"}
           gridPosicaoColumn={"1 / 3"}
@@ -93,6 +112,7 @@ function App() {
           onclick={() => insereDisplay("0")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"+"}
           gridPosicaoColumn={"4"}
@@ -101,6 +121,7 @@ function App() {
           onclick={() => insereDisplay("+")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           gridPosicaoColumn={"4"}
           gridPosicaoRow={"3"}
           tipo={"number"}
@@ -109,6 +130,7 @@ function App() {
           onclick={() => insereDisplay("-")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"="}
           gridPosicaoColumn={"4"}
@@ -120,6 +142,7 @@ function App() {
           }}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"."}
           gridPosicaoColumn={"3"}
@@ -127,6 +150,7 @@ function App() {
           onclick={() => insereDisplay(".")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"MOD"}
           gridPosicaoColumn={"3"}
@@ -134,6 +158,7 @@ function App() {
           onclick={() => insereDisplay("%")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"x"}
           gridPosicaoColumn={"4"}
@@ -142,6 +167,7 @@ function App() {
           onclick={() => insereDisplay("*")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           tipo={"number"}
           text={"/"}
           gridPosicaoColumn={"4"}
@@ -150,6 +176,7 @@ function App() {
           onclick={() => insereDisplay("/")}
         />
         <Botao
+          classCss={TemaAtual?"BotaoTema-Dark":"Tema-Light"}
           gridPosicaoColumn={"1 / 3"}
           gridPosicaoRow={"1 / 1"}
           tipo={"number"}
