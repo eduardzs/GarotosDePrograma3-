@@ -117,7 +117,7 @@ function App() {
           text={"+"}
           gridPosicaoColumn={"4"}
           gridPosicaoRow={"4"}
-          border={"2px solid #1565C0"}
+          border={"2px solid #7F00FF"}
           onclick={() => insereDisplay("+")}
         />
         <Botao
@@ -126,7 +126,7 @@ function App() {
           gridPosicaoRow={"3"}
           tipo={"number"}
           text={"-"}
-          border={"2px solid #1565C0"}
+          border={"2px solid #7F00FF"}
           onclick={() => insereDisplay("-")}
         />
         <Botao
@@ -135,7 +135,7 @@ function App() {
           text={"="}
           gridPosicaoColumn={"4"}
           gridPosicaoRow={"5"}
-          fundo={"#1565C0"}
+          fundo={"#7F00FF"}
           cortxt={"#ffff"}
           onclick={() => {
             calcular();
@@ -163,7 +163,7 @@ function App() {
           text={"x"}
           gridPosicaoColumn={"4"}
           gridPosicaoRow={"2"}
-          border={"2px solid #1565C0"}
+          border={"2px solid #7F00FF"}
           onclick={() => insereDisplay("*")}
         />
         <Botao
@@ -172,7 +172,7 @@ function App() {
           text={"/"}
           gridPosicaoColumn={"4"}
           gridPosicaoRow={"1"}
-          border={"2px solid #1565C0"}
+          border={"2px solid #7F00FF"}
           onclick={() => insereDisplay("/")}
         />
         <Botao

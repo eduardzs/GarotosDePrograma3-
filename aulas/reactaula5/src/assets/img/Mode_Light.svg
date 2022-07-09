@@ -2,15 +2,15 @@
 <g filter="url(#filter0_dd_3_236)">
 <circle cx="30" cy="30" r="15" fill="#F1F3F6"/>
 </g>
-<path d="M30 35C32.7614 35 35 32.7614 35 30C35 27.2386 32.7614 25 30 25C27.2386 25 25 27.2386 25 30C25 32.7614 27.2386 35 30 35Z" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M30 19V21" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M30 39V41" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.22 22.22L23.64 23.64" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M36.36 36.36L37.78 37.78" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19 30H21" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M39 30H41" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.22 37.78L23.64 36.36" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M36.36 23.64L37.78 22.22" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 35C32.7614 35 35 32.7614 35 30C35 27.2386 32.7614 25 30 25C27.2386 25 25 27.2386 25 30C25 32.7614 27.2386 35 30 35Z" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 19V21" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 39V41" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.22 22.22L23.64 23.64" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.36 36.36L37.78 37.78" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 30H21" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39 30H41" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.22 37.78L23.64 36.36" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.36 23.64L37.78 22.22" stroke="#7F00FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <filter id="filter0_dd_3_236" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

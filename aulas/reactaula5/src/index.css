@@ -4,7 +4,19 @@
   margin: 0 auto;
 }
 
+html, body, #root, .App{
+  width: 100vw;
+}
+
+html{
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29) fixed;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29) fixed;
+}
+
 body {
+  display: flex;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
