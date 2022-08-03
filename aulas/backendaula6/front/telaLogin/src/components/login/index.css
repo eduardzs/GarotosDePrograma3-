@@ -1,0 +1,45 @@
+.containerForm{
+    display: grid;
+    grid-template-columns: 240px 32px;
+    grid-template-rows: auto repeat(3, 30px);
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.FormInputName{
+    grid-column: 1 / 1;
+    grid-row: 2;
+}
+
+.FormIconPerson{
+    grid-column: 2 / 2;
+    grid-row: 2;
+    width: 30px;
+}
+
+.FormInputPassword{
+    grid-column: 1 / 1;
+    grid-row: 3;
+}
+
+.FormIconEye{
+    grid-column: 2 / 2;
+    grid-row: 3;
+    width: 32px;
+}
+
+.FormButton{
+    grid-column: 1 / -1;
+    grid-row: 4;
+}
+
+
+.MyLogo {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+
