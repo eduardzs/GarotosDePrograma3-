@@ -1,26 +1,79 @@
-[
-    {  
-    "usuario": "Eduardo",
-    "senha": "43729076"
-    
-    },
-    {
-    "usuario": "Vinicius",
-    "senha": "31252346"
-
-    },
-    {
-    "usuario": "Lucas",
-    "senha": "312563467"
-
-    },
-    {
-    "usuario": "Loribao",
-    "senha": "486796789"
-
-    },
-    {
-    "usuario": "Kaio",
-    "senha": "389123237"
-    }
-]
+{
+    "dadosLogin": [
+        {
+            "login": {
+                "cod": 1,
+                "usuario": "Eduardo",
+                "senha": "43729076"
+            },
+            "usuario": {
+                "cod": 1,
+                "nome": "Eduardo",
+                "sobrenome": "Fonseca",
+                "anoNascimento": 2003,
+                "moradia": "Casa",
+                "pet": 1
+            }
+        },
+        {
+            "login": {
+                "cod": 2,
+                "usuario": "Loribão",
+                "senha": "67582076"
+            },
+            "usuario": {
+                "cod": 2,
+                "nome": "Loribão",
+                "sobrenome": "Konira",
+                "anoNascimento": 1997,
+                "moradia": "Ponte",
+                "pet": 4
+            }
+        },
+        {
+            "login": {
+                "cod": 3,
+                "usuario": "Carlos",
+                "senha": "58390256"
+            },
+            "usuario": {
+                "cod": 3,
+                "nome": "Carlos",
+                "sobrenome": "Alberto",
+                "anoNascimento": 1500,
+                "moradia": "Caverna",
+                "pet": 2
+            }
+        },
+        {
+            "login": {
+                "cod": 4,
+                "usuario": "Matheus",
+                "senha": "23958632"
+            },
+            "usuario": {
+                "cod": 4,
+                "nome": "Matheus",
+                "sobrenome": "Noia",
+                "anoNascimento": 1999,
+                "moradia": "Barbearia",
+                "pet": 0
+            }
+        },
+        {
+            "login": {
+                "cod": 5,
+                "usuario": "Joana",
+                "senha": "98352678"
+            },
+            "usuario": {
+                "cod": 5,
+                "nome": "Joana",
+                "sobrenome": "De Maria",
+                "anoNascimento": 1499,
+                "moradia": "Igreja",
+                "pet": 8
+            }
+        }
+    ]
+}

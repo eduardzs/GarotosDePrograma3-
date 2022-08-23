@@ -13,9 +13,18 @@
 
 // console.log(resultadoToken)
 
-import { JsonWebTokenError } from 'jsonwebtoken'
+import jwt from 'jsonwebtoken'
 import chaveSecreta from './secretkey.js'
+import validarLogindb from './repositorio/loginRepositorio.js'
 
-function pageLogin (login, senha){
-    
+async function pageLogin(login, senha) {
+    try {
+        let informacao = await validarLogindb(login, senha)
+        let token = jwt.sign(informacao, chaveSecreta);
+        return token;
+    } catch (error) {
+        return "Deu erro"
+    }
 }
+
+pageLogin("Eduardo", "43729076").then((data) => console.log(data))
