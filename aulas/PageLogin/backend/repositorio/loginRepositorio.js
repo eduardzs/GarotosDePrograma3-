@@ -1,7 +1,7 @@
 const fullFile = './repositorio/datadb.json'
 import fs from 'fs/promises';
 
-async function db() {
+const db = async () => {
   try {
     const data = await fs.readFile(fullFile, { encoding: 'utf8' });
     return JSON.parse(data);
@@ -10,13 +10,10 @@ async function db() {
   }
 }
 
-async function validarLogindb (login = '', senha = ''){
+const validarLogindb = async(login = '', senha = '') => {
   const data = await db()
-  let {usuario} = data.dadosLogin.find((dados)=>dados.login.usuario == login && dados.login.senha == senha)
+  let { usuario } = data.dadosLogin.find((dados) => dados.login.usuario == login && dados.login.senha == senha)
   return usuario
 }
-
-// let resultado = validarLogindb('Eduardo', '43729076')
-// resultado.then(result=>console.log(result))
 
 export default validarLogindb

@@ -1,30 +1,41 @@
-// var jwt = require('jsonwebtoken');
-// var chaveSecreta = 'sosdfgyuisdfgyhu'
-// var informacao = {
-//     nome: 'Eduardo',
-//     idade: 18,
-//     cidade: 'Veredinha - MG'
-// }
-
-// // var token = jwt.sign(informacao, chaveSecreta);
-// // console.log(token)
-
-// var resultadoToken = jwt.verify ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiRWR1YXJkbyIsImlkYWRlIjoxOCwiY2lkYWRlIjoiVmVyZWRpbmhhIiwiaWF0IjoxNjYwNjkxODg1fQ.VucPgamqib3OeRtibPSXZeII01vSlia7N5t15rKclPs', chaveSecreta)
-
-// console.log(resultadoToken)
-
 import jwt from 'jsonwebtoken'
 import chaveSecreta from './secretkey.js'
 import validarLogindb from './repositorio/loginRepositorio.js'
+import express, { request, response } from 'express'
+import bodyParser from 'body-parser'
+const app = express()
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
-async function pageLogin(login, senha) {
+const pageLogin = async (login, senha) => {
     try {
         let informacao = await validarLogindb(login, senha)
         let token = jwt.sign(informacao, chaveSecreta);
         return token;
     } catch (error) {
-        return "Deu erro"
+        return "Login Invalido :("
     }
 }
 
-pageLogin("Eduardo", "43729076").then((data) => console.log(data))
+const validarToken = async (token) => {
+    try {
+        return jwt.verify(token, chaveSecreta)
+    } catch (error) {
+        return "Token Invalido :("
+    }
+}
+
+app.get('/', async (request, response) => {
+    response.send('Hello World')
+})
+app.post('/fazerLogin', async (request, response) => {
+    console.log(request.body)
+    let token = await pageLogin(request.body.login, request.body.senha)
+    response.json({ token })
+})
+app.post('/validarToken', async(request, response) => {
+    console.log(request.body)
+    let validartk = await validarToken(request.body.token)
+    response.json({validartk})
+})
+app.listen(3300, () => { console.log("PORT: 3300") })
