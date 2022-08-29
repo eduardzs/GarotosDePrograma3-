@@ -3,9 +3,12 @@ import chaveSecreta from './secretkey.js'
 import validarLogindb from './repositorio/loginRepositorio.js'
 import express, { request, response } from 'express'
 import bodyParser from 'body-parser'
+import cors from 'cors'
+
 const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(cors())
 
 const pageLogin = async (login, senha) => {
     try {
@@ -38,4 +41,4 @@ app.post('/validarToken', async(request, response) => {
     let validartk = await validarToken(request.body.token)
     response.json({validartk})
 })
-app.listen(3300, () => { console.log("PORT: 3300") })
+app.listen(3350, () => { console.log("PORT: 3350") })

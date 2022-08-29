@@ -1,99 +1,102 @@
-.displayContainer{
-    width: 400px;
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 8fr;
     height: 450px;
-    margin: 0 auto;
-    margin-top: 100px;
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.tituloContainer{
-    font-size: 2.25rem;
-    text-align: center;
-    color: #FFFF;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.inputsContainer{
-    text-align: center;
-    font-size: 1.1rem;
-    color: #FFFF;
-    display: flex;
-    flex-direction: column;
-    font-weight: 600;
-    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .loginContainer{
+    border-radius: 10px 0px 0px 10px;
+    background-color: #FFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
-.senhaContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 10px;
+.subtitulo{
+    font-weight: bold;
+    font-size: 1.75rem;
 }
 
-.textInput{
+.paragrafo{
+    color: #5b5b5b;
+}
+
+.hr{
+    background-color: #8844ee;
+    width: 200px;
+}
+
+.inputParagrafo{
+    color: #8844ee;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+.inputDesigner{
+    border: none;
+    background-color: #bbbbbb50;
     width: 200px;
     height: 35px;
-    text-align: center;
-    background-color: #2b2b2b6b;
-    border: none;
     border-radius: 25px;
-    color: #FFFF;
+    text-align: center;
     border: 2px solid transparent;
 }
 
-.passwordInput{
+.inputDesigner:hover{
+    border: 2px solid #8844ee;
+}
+
+.buttonDesigner{
+    border: none;
+    background-color: #8844ee;
     width: 200px;
     height: 35px;
-    text-align: center;
-    background-color: #2b2b2b6b;
-    border: none;
     border-radius: 25px;
-    color: #FFFF;
-    border: 2px solid transparent;
-}
-
-.passwordInput:hover{
-    border: 2px solid #DB62AB;
-}
-
-.textInput:hover{
-    border: 2px solid #DB62AB;
-}
-
-.textInput::placeholder{
+    text-align: center;
     color: #FFFF;
 }
 
-.passwordInput::placeholder{
-    color: #FFFF;
-}
-
-.btn{
-    width: 200px;
-    height: 35px;
-    border: none;
-    border-radius: 7px;
-    background-color: #DB62AB;
-    color: #FFFF;
-}
-
-.btn:hover{
+.buttonDesigner:hover{
+    background-color: #6a1cde96;
     cursor: pointer;
-    background-color: #833b67;
-    color: #f8e0ee;
+}
+
+.creditos{
+    color: #5b5b5b;
+    font-size: 0.85rem;
+}
+
+.imagemContainer{
+    background-color: #8844ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        border-radius: 0px 10px 10px 0px;
+}
+
+.imagem{
+    display: block;
+    max-width: 100%;
+    width: 300px;
+}
+
+@media (max-width:800px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+    }
+    .loginContainer{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .imagemContainer{
+        display: none;
+    }
 }
